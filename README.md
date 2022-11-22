@@ -1,1 +1,0 @@
-## NextJS öğrenme aşamasındaki notlarım
