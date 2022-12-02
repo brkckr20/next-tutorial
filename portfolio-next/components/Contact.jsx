@@ -2,6 +2,8 @@ import React from 'react'
 import { AiOutlineMail } from 'react-icons/ai'
 import { BsFillPersonBadgeFill } from 'react-icons/bs'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
+import { HiOutlineChevronDoubleUp } from 'react-icons/hi'
+import Link from 'next/link'
 
 const Contact = () => {
     return (
@@ -43,6 +45,45 @@ const Contact = () => {
                         </div>
 
                     </div>
+                    {/* right */}
+                    <div className='col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4'>
+                        <div className='p-4'>
+                            <form>
+                                <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
+                                    <div className='flex flex-col'>
+                                        <label className='uppercase text-sm py-2'>Name</label>
+                                        <input className='border-2 rounded-lg p-3 flex border-gray-300' type="text" />
+                                    </div>
+                                    <div className='flex flex-col'>
+                                        <label className='uppercase text-sm py-2'>phone number</label>
+                                        <input className='border-2 rounded-lg p-3 flex border-gray-300' type="text" />
+                                    </div>
+                                </div>
+                                <div className='flex flex-col py-2'>
+                                    <label className='uppercase text-sm py-2'>e-mail</label>
+                                    <input className='border-2 rounded-lg p-3 flex border-gray-300' type="text" />
+                                </div>
+                                <div className='flex flex-col py-2'>
+                                    <label className='uppercase text-sm py-2'>subject</label>
+                                    <input className='border-2 rounded-lg p-3 flex border-gray-300' type="text" />
+                                </div>
+                                <div className='flex flex-col py-2'>
+                                    <label className='uppercase text-sm py-2'>message</label>
+                                    <textarea className='border-2 rounded-lg py-3 border-gray-300' rows={10}></textarea>
+                                </div>
+                                <button className='uppercase w-full p-4 text-gray-100 mt-4'>
+                                    send message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div className='flex justify-center py-12'>
+                    <Link href="/">
+                        <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                            <HiOutlineChevronDoubleUp className='text-[#5651e5]' size={30} />
+                        </div>
+                    </Link>
                 </div>
             </div>
         </div>
