@@ -59,7 +59,9 @@ const Navbar = () => {
                 <div className={nav ? `md:hidden fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#eceff3] p-3 ease-in duration-500` : 'fixed left-[-100%] top-0 p-3 ease-in duration-500'}>
                     <div>
                         <div className='flex w-full items-center justify-between'>
-                            <Image src="/../public/assets/logo.png" width="87" height="35" alt='' />
+                            <Link href="/">
+                                <Image src="/../public/assets/logo.png" width="87" height="35" alt='' />
+                            </Link>
                             <div onClick={handleNav} className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'>
                                 <AiOutlineClose />
                             </div>
@@ -71,19 +73,19 @@ const Navbar = () => {
                     <div className='py-4 flex flex-col'>
                         <ul className='uppercase'>
                             <Link href="/">
-                                <li className='py-4'>Home</li>
+                                <li onClick={() => setNav(!nav)} className='py-4'>Home</li>
                             </Link>
-                            <Link href="/">
-                                <li className='py-4'>About</li>
+                            <Link href="/#about">
+                                <li onClick={() => setNav(!nav)} className='py-4'>About</li>
                             </Link>
-                            <Link href="/">
-                                <li className='py-4'>Projects</li>
+                            <Link href="/#projects">
+                                <li onClick={() => setNav(!nav)} className='py-4'>Projects</li>
                             </Link>
-                            <Link href="/">
-                                <li className='py-4'>Skilss</li>
+                            <Link href="/#skills">
+                                <li onClick={() => setNav(!nav)} className='py-4'>Skilss</li>
                             </Link>
-                            <Link href="/">
-                                <li className='py-4'>Contact</li>
+                            <Link href="/#contact">
+                                <li onClick={() => setNav(!nav)} className='py-4'>Contact</li>
                             </Link>
                         </ul>
                         <div className='pt-40'>
