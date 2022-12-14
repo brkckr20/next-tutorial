@@ -4,7 +4,7 @@ import React from 'react';
 import propertyImage from '../public/assets/property.jpg';
 import { RiRadioButtonFill } from 'react-icons/ri'
 
-const property = () => {
+const crypto = () => {
     return (
         <div className='w-full'>
             <div className='w-screen h-[30vh] lg:h-[40vh] relative'>
@@ -21,7 +21,7 @@ const property = () => {
                 <div className='col-span-4'>
                     <p>Project</p>
                     <h2>Overview</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aspernatur necessitatibus dolorem fugit sequi officia accusamus dolores quibusdam architecto magni et consequuntur ipsam soluta esse magnam unde error, dignissimos accusantium culpa facere ex? Tenetur natus vero eius minima eaque illum ad delectus ratione quod tempore consequuntur aliquam atque, repellat neque possimus! Rem repudiandae recusandae natus sapiente odio odit voluptatum, doloribus similique maiores perspiciatis, earum alias eligendi voluptates. Maxime neque eveniet laudantium nihil odio, aut possimus animi error quis assumenda cum porro quisquam recusandae provident vel excepturi, soluta dignissimos! Harum libero omnis vero voluptates obcaecati nisi nostrum magni, vitae dignissimos natus?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nihil sed, ipsam dolorem minus beatae iure, necessitatibus quam debitis nulla mollitia? Consequuntur optio repudiandae quod, atque voluptas veritatis impedit rerum dolor hic voluptatem sapiente laborum mollitia! Hic, doloremque eveniet repellendus veniam explicabo placeat optio dolor reiciendis commodi doloribus esse necessitatibus pariatur quam harum expedita molestias?</p>
                     <button className='px-8 py-2 mt-4 mr-8'>Demo</button>
                     <button className='px-8 py-2 mt-4 '>Code</button>
                 </div>
@@ -40,7 +40,7 @@ const property = () => {
 
                 </div>
             </div>
-            <Link href="/#projects">
+            <Link href="/#crypto">
                 <p className='hover:underline cursor-pointer'>
                     Back
                 </p>
@@ -49,4 +49,4 @@ const property = () => {
     )
 }
 
-export default property
+export default crypto
