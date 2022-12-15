@@ -11,7 +11,7 @@ const crypto = () => {
                 <div className='absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10'>
                     <Image className='absolute z-1' objectFit='cover' layout='fill' src={propertyImage} alt="/" />
                     <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10'>
-                        <h2 className='py-2 text-black'>Property</h2>
+                        <h2 className='py-2 text-black'>Crypto App</h2>
                         <h3 className='text-black'>React JS / Tailwind / Firebase</h3>
                     </div>
                 </div>
@@ -40,7 +40,7 @@ const crypto = () => {
 
                 </div>
             </div>
-            <Link href="/#crypto">
+            <Link href="/#property">
                 <p className='hover:underline cursor-pointer'>
                     Back
                 </p>

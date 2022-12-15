@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import zillowPic from '../public/assets/zillow.png'
 
 const ProjectItem = ({ title, backgroundImg, projectUrl }) => {
     return (

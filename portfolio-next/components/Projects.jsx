@@ -3,7 +3,6 @@ import ProjectItem from './ProjectItem';
 import zillowPic from '../public/assets/zillow.png'
 import crypto from '../public/assets/crypto.png'
 
-
 const Projects = () => {
     return (
         <div id='projects' className='w-full'>
